@@ -1,0 +1,206 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: linear-gradient(#7f71a8, #443a5f);
+	font-weight: 400!important;
+	height: 100%;
+}
+
+
+/*
+Dark
+
+#443a5f
+#70619e
+#7f70a8
+#7f71a8
+#8d80b1
+#9b90bb
+#a9a0c5
+#b7b0ce
+#c6bfd8
+
+Light
+*/
+
+
+
+.task-date-group > h6 {
+	padding-left: 1rem;
+	font-weight: 300!important;
+	color: rgba(255,255,255,.8);
+}
+
+#add_card {
+	width: 100%;
+	background-color: #9b90bb;
+	color: white;
+}
+
+#add_card:hover, #add_card:active {
+	background-color: #8d80b1;
+	color: lightgrey;
+}
+
+.card {
+	/* To Do */
+	border-radius: 0.35rem;
+}
+
+.card-body {
+	padding: 1.25rem 3rem;
+}
+
+	.card-title {
+		margin-bottom: .5rem;
+	}
+
+	.card-subtitle {
+		font-weight: 300!important;
+		color: lightgrey;
+		font-size: .85rem
+	}
+
+
+
+	.card-text > a {
+		color: black;
+		display: inline-block;
+		text-decoration: none;
+		border-bottom: 1px solid rgba(0,0,0,0.4);
+		line-height: 100%;
+	}
+
+	.card-text > a:hover, .card-text > a:active {
+		color: rgba(0,0,0,0.7);
+		text-decoration: none;
+		border-bottom: 1px solid rgba(0,0,0,0.2);
+	}
+
+.card-footer {
+	background-color: #9b90bb;
+}
+
+.card-footer:last-child {
+	border-radius: 0 0 0.35rem 0.35rem;
+}
+
+	button.btn.btn-card-options {
+		background-color: rgba(0,0,0,0);
+		color: white;
+	}
+
+	button.btn.btn-card-options:hover, button.btn.btn-card-options:active  {
+		background-color: #9b90bb;
+		color: lightgrey;
+	}
+
+
+#addTaskText {
+	border: none;
+	height: 150px;
+	resize: none;
+	-webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn-primary {
+	background-color: #7f71a8;
+    border-color: #7f71a8;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+}
+
+/* --- Add Item Modal check box slider --- */
+
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 8px;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #7f71a8;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #7f71a8;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 17px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+/* --- Add Item Modal Text area --- */
+
+.nav-tabs .nav-link {
+	color: #495057;
+	border-top: none;
+}
+
+.nav-tabs {
+	border: 1px solid transparent;
+}
+
+.nav-link {
+	border: none;
+}
+
+.nav-link.active {
+	border-bottom: 1px solid;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-color: transparent transparent #c1c9d0 transparent!important;
+}
+
+.nav-link:hover {
+	border-bottom: 1px solid;
+	border-top: none;
+	border-left: 1px;
+	border-right: 1px;
+	border-color: transparent transparent #dee2e6 transparent!important;
+}
